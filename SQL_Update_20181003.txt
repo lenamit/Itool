@@ -1,0 +1,11 @@
+CREATE TABLE `import_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `action` varchar(45) DEFAULT NULL,
+  `username` varchar(100) DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `result` varchar(45) DEFAULT NULL,
+  `file_name` varchar(100) DEFAULT NULL,
+  `log_message` varchar(255) DEFAULT NULL,
+  `byte_content` longblob,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COMMENT='log import excell';
